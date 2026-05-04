@@ -7,9 +7,11 @@ form.addEventListener('submit', function(event) {
 
     const nome = document.getElementById('nomeAluno').value;
     const idade = document.getElementById('idadeAluno').value;
+    const email = document.getElementById('emailAluno').value;
+    const CPF = document.getElementById('CPFAluno').value;
 
     const novoItem = document.createElement('li');
-    novoItem.innerHTML = `<strong> ${nome} </strong> - ${idade} anos`;
+    novoItem.innerHTML = `<strong> ${nome} </strong> - ${idade} anos <strong> ${email} </strong> - ${CPF} anos`;
 
     lista.appendChild(novoItem);
 
